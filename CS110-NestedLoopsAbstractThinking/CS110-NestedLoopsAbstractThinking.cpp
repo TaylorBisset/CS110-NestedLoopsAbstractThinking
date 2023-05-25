@@ -14,13 +14,13 @@ int main()
         }
         cout << endl;
 
-        // Prints "|R:C|" at each row and column interval.
+        // Prints "| X |" at each row and column interval.
         for (int column = 0; column < 10; column++)
         {
             cout << verLn;
 
             // Grid print logic here. Comment out sections not currently being used.
-
+//----------------------------------------
             //// 1: Print " $ " in even rows.
             //if (row % 2 == 0)
             //{
@@ -28,7 +28,7 @@ int main()
             //}
             //else
             //    cout << "   ";
-
+//----------------------------------------
             //// 2: Print " # " in even columns.
             //if (column % 2 == 0)
             //{
@@ -36,7 +36,7 @@ int main()
             //}
             //else
             //    cout << "   ";
-
+//----------------------------------------
             //// 3: Print " X " in diagonal line from upper right to lower left.
             //if (row + column == 9)
             //{
@@ -44,7 +44,7 @@ int main()
             //}
             //else
             //    cout << "   ";
-
+//----------------------------------------
             // 4: Print " X " in diagonal line from upper right to lower left and from upper left to lower right.
             if (row + column == 9 || row == column)
             {
@@ -52,6 +52,7 @@ int main()
             }
             else
                 cout << "   ";
+//----------------------------------------
         }
 
         cout << verLn << endl;
