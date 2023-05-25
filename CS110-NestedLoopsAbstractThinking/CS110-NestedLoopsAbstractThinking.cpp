@@ -29,10 +29,18 @@ int main()
             //else
             //    cout << "   ";
 
-            // 2: Print " # " in even columns.
-            if (column % 2 == 0)
+            //// 2: Print " # " in even columns.
+            //if (column % 2 == 0)
+            //{
+            //    cout << " # ";
+            //}
+            //else
+            //    cout << "   ";
+
+            // 3: Print " X " in diagonal line from upper right to lower left.
+            if (row + column == 9)
             {
-                cout << " # ";
+                cout << " X ";
             }
             else
                 cout << "   ";
