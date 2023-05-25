@@ -15,7 +15,7 @@ int main()
         cout << endl;
 
         // Prints "|R:C|" at each row and column interval.
-        for (int column = 0; column < 10; column++) 
+        for (int column = 0; column < 10; column++)
         {
             cout << verLn;
 
@@ -37,8 +37,16 @@ int main()
             //else
             //    cout << "   ";
 
-            // 3: Print " X " in diagonal line from upper right to lower left.
-            if (row + column == 9)
+            //// 3: Print " X " in diagonal line from upper right to lower left.
+            //if (row + column == 9)
+            //{
+            //    cout << " X ";
+            //}
+            //else
+            //    cout << "   ";
+
+            // 4: Print " X " in diagonal line from upper right to lower left and from upper left to lower right.
+            if (row + column == 9 || row == column)
             {
                 cout << " X ";
             }
