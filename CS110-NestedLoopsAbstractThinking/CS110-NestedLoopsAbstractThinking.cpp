@@ -19,10 +19,20 @@ int main()
         {
             cout << verLn;
 
-            // Grid print logic here.
-            if (row % 2 == 0)
+            // Grid print logic here. Comment out sections not currently being used.
+
+            //// 1: Print " $ " in even rows.
+            //if (row % 2 == 0)
+            //{
+            //    cout << " $ ";
+            //}
+            //else
+            //    cout << "   ";
+
+            // 2: Print " # " in even columns.
+            if (column % 2 == 0)
             {
-                cout << " $ ";
+                cout << " # ";
             }
             else
                 cout << "   ";
